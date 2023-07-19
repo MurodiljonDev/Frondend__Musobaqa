@@ -1,0 +1,198 @@
+.lawyear__port{
+    margin: 80px  0; 
+}
+.lawyear__port--box{
+    height: 691px;
+    & > h2{
+        margin-bottom: 30px;
+        @include font(32px, 700, normal, #140A32,-0.96px)
+    }
+    .lawyear__port--wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 20px;
+        .lawyear__port--left{
+            display: flex;
+            flex-direction: column;
+            gap: 18px 0;
+            .lawyear__port--item{
+                padding-right: 62px;
+                padding-left: 20px;
+                display: flex;
+                gap: 0 20px;
+                width: 100%;
+                max-width: 463px;
+                height: 120px;
+                border-radius: 20px;
+                border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+                & strong{
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                    display: block;          
+                }
+                .lawyear__info--box{
+                    & > h3{
+                        margin-top: 20px;
+                        @include font(18px, 600, 24.51px, #140A32)
+                    }
+                    & > strong{
+                        @include font(16px, 400, 21.79px, #140A32)
+                    }
+                    & > span{
+                        @include font(16px, 400, normal, rgba(47, 43, 67, 0.50))
+                    }
+                }
+            }
+            .lawyear__left--btn > button{
+                @include font(16px, 600, normal,#33836E);
+                margin-top: 10px;
+                border: none;
+                display: flex;
+                width: 463px;
+                padding: 16px 36px 18px 36px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                background-color: #E0ECE9;
+            }
+            .lawyear__left--btn{
+                & > button{
+                    transition: 0.3s;
+                }
+                & > button:hover{
+                    cursor: pointer;
+                    box-shadow: 3px 3px 3px 3px #0000002c;
+                }
+            }
+        }
+        .lawyear__port--right{
+            display:flex;
+            flex-direction: column;
+            gap: 30px 0;
+            width: 100%;
+            max-width: 657px;
+            height: 617px;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: #33836E;
+            .lawyear__port--right--title{
+                width: 100%;
+                position: relative;
+                & > h3{
+                    margin-bottom: 10px;
+                    @include font(32px, 700, 43.58px, #FFFFFF,0.96px)
+                }
+                & > p{
+                    @include font(18px, 400, normal, #FFF)
+                }
+                .box__online{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    position:absolute;
+                    top: -11px;
+                    left: 473px;
+                    max-width: 115px;
+                    height: 33px;
+                    padding: 5px 16px 6px 16px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #FFFFFF;
+                    & > span{
+                        @include font(16px, 400, 21.79px, #140A32)
+                    }
+                }
+            }
+            .lawyear__port--right--middle{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 15px 0;
+                &  textarea {
+                    margin-bottom: 18px;
+                    resize: none;
+                    text-indent: 16px;
+                    width: 100%;
+                    max-width: 578px;
+                    height: 222px;
+                    border-radius: 10px;
+                    border-radius: 10px;
+                    background: #FFF;
+                    outline: none;
+                }
+                &  textarea::placeholder{
+                    padding-top: 12px;
+                    @include font(16px, 400, 21.79px, rgba(47, 43, 67, 0.50))
+                }
+                .middle__btns{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    gap: 0 15px;
+                    .send__info  input{
+                        padding-top: 22px;
+                        text-indent: 20px;
+                        width:205px;
+                        height:56px;
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
+                    }
+                    .send__info input::placeholder{
+                        @include font(16px, 400, normal, #140A32)
+                    }
+                    .send__info  h5{
+                        @include font(12px, 400, normal, rgba(47, 43, 67, 0.40))
+                    }
+                    .send__info{
+                        position: relative;
+                    }
+                    .send__info h5{
+                        position: absolute;
+                        top: 7px;
+                        left: 20px;
+                    }
+                    & > button{
+                        width:137px;
+                        height: 56px;
+                        padding: 16px 24px 18px 24px;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: #140A32;
+                        @include font(16px, 600, 21.79px, #FFFFFF)
+                    }
+                    & > button{
+                        transition: 0.3s;
+                    }
+                    & > button:hover{
+                        cursor: pointer;
+                        box-shadow: 3px 3px 3px 3px #280a827d;
+                    }
+                }
+                & > p{
+                    padding-left: 1.2px;
+                    @include font(12px, 600, 16.34px,rgba(255, 255, 255, 0.5))
+                }
+            }
+            .lawyear__port--right--bottom{
+                display: flex;
+                width: 100%;
+                gap: 0 40px;
+                .lawyear__bottom--item{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    gap: 10px 0 ;
+                    & h4{
+                        @include font(20px, 700, normal, #fff, -0.6px)
+                    }
+                    & h5{
+                        @include font(16px, 400, normal, #fff)
+                    }
+                }
+            }
+        }      
+    }
+}

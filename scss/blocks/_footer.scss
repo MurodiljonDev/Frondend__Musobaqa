@@ -1,0 +1,35 @@
+footer{
+    height: 708px;
+    .footer__big--box{
+        & > h2{
+            margin-bottom: 40px;
+            @include font(32px, 700, 43.58px, #140A32,-0.96px)
+        }
+        .footer__items--wrapper{
+            display: flex;
+            padding-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 40px 20px;
+            .footer__item{
+                width: 100%;
+                max-width: 270px;
+                max-height: 166px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px 0;
+                & > h3{
+                    @include font(24px, 700, 32.68px,#140A32)
+                }
+                .item__menu{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px 0;
+                    & a{
+                        text-decoration: none;
+                        @include font(16px, 400, 21.79px, #140A32)
+                    }
+                }
+            }
+        }
+    }
+}

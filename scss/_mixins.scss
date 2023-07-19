@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin font($f__size, $f__weight, $l__height,$c__txt,$l__spacing:none){
+    font-family: 'Open Sans',sans-serif;
+    font-size: $f__size;
+    font-weight: $f__weight;
+    line-height: $l__height;
+    letter-spacing: l__spacing;
+    color:$c__txt ;
+}

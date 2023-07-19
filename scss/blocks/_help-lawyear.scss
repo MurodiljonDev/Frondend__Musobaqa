@@ -1,0 +1,73 @@
+.help__lawyer{
+    margin-top: 101px;
+    margin-bottom: 80px;
+    .help__lawyer--top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+        margin-bottom: 80px;
+        & > h2{
+            @include font(32px, 700, normal, #140A32, -0.96px)
+        }
+        & > p{
+            width: 100%;
+            max-width: 1140px;
+            @include font(16px, 400, 25.6px, #140A32)
+        }
+    }
+    .help__lawyer--box{
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0;
+        & > h2{
+            @include font(32px, 700, normal, #140A32, -0.96px)
+        }
+        & > p{
+            margin-bottom: 15px;
+            @include font(16px, 400, 25.6px, #140A32)
+        }
+        .help__lawyer--wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 20px;
+            .help__lawyer--item{
+                padding: 20px;
+                width: 100%;
+                max-width: 270px;
+                height: 180px;
+                border-radius: 20px;
+                border: 1px solid rgba(47, 43, 67, 0.15);
+            }
+            .help__lawyer--item{
+                & > img{
+                    margin-bottom: 15px;
+                }
+                & > p{
+                    margin-bottom: 15px;
+                    @include font(16px, 400, 25.6px, #140A32)
+                }
+                & > b{
+                    @include font(20px, 700, 26.24px, #140A32);
+                    display: block;
+                    margin-bottom: 13px;
+                }
+                & > span{
+                    @include font(16px, 600, 26.24px, #33836E);
+
+                }
+
+            }
+        }
+    }
+    .calling__our{
+        & > img{
+            width: 100%;
+            max-width: 1140px;
+        }
+        margin-top: 80px;
+    }
+}
+.m__top{
+    display: block;
+    padding-top: 13px;
+}
